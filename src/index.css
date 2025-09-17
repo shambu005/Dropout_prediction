@@ -2,41 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Student Risk Dashboard Design System
+Professional education-focused color palette with risk indicators
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 15% 97%;
+    --foreground: 220 25% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 25% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 25% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 214 84% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 84% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 15% 94%;
+    --secondary-foreground: 220 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 197 71% 73%;
+    --accent-foreground: 220 25% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 214 84% 45%;
 
-    --radius: 0.5rem;
+    /* Risk Level Colors */
+    --risk-low: 142 71% 45%;
+    --risk-low-foreground: 0 0% 100%;
+    --risk-low-light: 142 71% 95%;
+    
+    --risk-medium: 38 92% 50%;
+    --risk-medium-foreground: 0 0% 100%;
+    --risk-medium-light: 38 92% 95%;
+    
+    --risk-high: 0 84% 60%;
+    --risk-high-foreground: 0 0% 100%;
+    --risk-high-light: 0 84% 95%;
+
+    /* Dashboard specific */
+    --dashboard-bg: 220 15% 98%;
+    --sidebar-bg: 0 0% 100%;
+    --stats-card: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 45%), hsl(197 71% 73%));
+    --gradient-risk: linear-gradient(90deg, hsl(142 71% 45%), hsl(38 92% 50%), hsl(0 84% 60%));
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

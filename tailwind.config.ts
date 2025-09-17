@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -57,6 +58,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        risk: {
+          low: "hsl(var(--risk-low))",
+          "low-foreground": "hsl(var(--risk-low-foreground))",
+          "low-light": "hsl(var(--risk-low-light))",
+          medium: "hsl(var(--risk-medium))",
+          "medium-foreground": "hsl(var(--risk-medium-foreground))",
+          "medium-light": "hsl(var(--risk-medium-light))",
+          high: "hsl(var(--risk-high))",
+          "high-foreground": "hsl(var(--risk-high-foreground))",
+          "high-light": "hsl(var(--risk-high-light))",
+        },
+        dashboard: "hsl(var(--dashboard-bg))",
       },
       borderRadius: {
         lg: "var(--radius)",
