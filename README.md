@@ -1,7 +1,7 @@
 Welcome to My Project
 Project Info
 
-URL: Live Project Link
+
 
 How to Edit This Code
 
