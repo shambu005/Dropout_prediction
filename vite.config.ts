@@ -5,12 +5,13 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/vigilant-mentor/",  // <-- ADD this line, replace with your repo name
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-resolve: {
+  resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
